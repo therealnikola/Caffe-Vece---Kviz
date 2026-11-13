@@ -1,0 +1,42 @@
+{
+  "rules": {
+    "events": {
+      "$eventId": {
+        ".read": true,
+        ".write": true,
+        "teams": {
+          "$teamCode": {
+            ".read": true,
+            ".write": true,
+            "members": {
+              "$memberId": {
+                ".read": true,
+                ".write": true
+              }
+            }
+          }
+        },
+        "questions": {
+          ".read": true,
+          ".write": true
+        },
+        "gameState": {
+          ".read": true,
+          ".write": true
+        },
+        "announcements": {
+          ".read": true,
+          ".write": true
+        },
+        "settings": {
+          ".read": true,
+          ".write": true
+        }
+      }
+    },
+    "masterAdmins": {
+      ".read": false,
+      ".write": false
+    }
+  }
+}
